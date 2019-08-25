@@ -8,6 +8,8 @@ var firebaseConfig = {
     storageBucket: "posts-manager-app.appspot.com",
     messagingSenderId: "389730848597",
     appId: "1:389730848597:web:12be279914396555"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
+};
+firebase.initializeApp(config);
+firebase.firestore().settings({ timestampsInSnapshots: true });
+
+export default firebase;
