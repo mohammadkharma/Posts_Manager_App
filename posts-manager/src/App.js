@@ -3,6 +3,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Navbar from './components/layout/Navbar';
 import Dashboard from './components/dashboard/Dashboard';
 import PostDetails from './components/posts/PostDetails';
+import SignIn from './components/auth/SignIn';
 class App extends Component {
   render() {
     return (
@@ -11,6 +12,7 @@ class App extends Component {
         <Navbar />
         <Switch>
           <Route exact path='/' component={Dashboard} />
+          <Route path='/signin' component={SignIn} />
           <Route path='/post/:post_id' component={PostDetails} />
         </Switch>
       </div>
