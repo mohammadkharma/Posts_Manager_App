@@ -11,7 +11,7 @@ const postReducer = (state = initState, action) => {
         case 'CREATE_POST':
             console.log('created post', action.post);
             return state;
-        case 'CREATE_POST':
+        case 'CREATE_POST_ERR':
             console.log('created post error', action.err)
             return state;
         default:
