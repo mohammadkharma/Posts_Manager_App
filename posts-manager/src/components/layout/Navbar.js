@@ -4,6 +4,7 @@
 // Exported to: App.js
 
 import React from 'react';
+import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import SignedInLinks from './SignedInLinks';
 import SignedOutLinks from './SignedOutLinks';
@@ -20,4 +21,11 @@ const Navbar = () => {
     )
 }
 
-export default Navbar;
+const mapState = state => {
+    console.log('Navbar state', state);
+    return {
+        // firebase: state.firebase
+    }
+}
+
+export default connect(mapState)(Navbar);
