@@ -9,13 +9,15 @@ import { Link } from 'react-router-dom';
 import SignedInLinks from './SignedInLinks';
 import SignedOutLinks from './SignedOutLinks';
 
-const Navbar = () => {
+const Navbar = (props) => {
+    const { auth } = props;
+    // console.log(auth);
+    const links = auth.uid ? <SignedInLinks /> : <SignedOutLinks /> 
     return(
     <nav className="nav-wrapper grey darken-3">
         <div className="container">
             <Link to='/' className='brand-logo'>Posts Manager</Link>
-            <SignedInLinks />
-            <SignedOutLinks />
+            { links }
         </div>
     </nav>       
     )
@@ -24,7 +26,7 @@ const Navbar = () => {
 const mapState = state => {
     console.log('Navbar state', state);
     return {
-        // firebase: state.firebase
+        auth: state.firebase.auth
     }
 }
 
