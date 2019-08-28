@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Posts_Manager_App/posts-manager/static/css/main.7378ac47.chunk.css",
-    "main.js": "/Posts_Manager_App/posts-manager/static/js/main.5d6b4f57.chunk.js",
-    "main.js.map": "/Posts_Manager_App/posts-manager/static/js/main.5d6b4f57.chunk.js.map",
-    "runtime~main.js": "/Posts_Manager_App/posts-manager/static/js/runtime~main.b07ab4b6.js",
-    "runtime~main.js.map": "/Posts_Manager_App/posts-manager/static/js/runtime~main.b07ab4b6.js.map",
-    "static/js/2.c61a87b9.chunk.js": "/Posts_Manager_App/posts-manager/static/js/2.c61a87b9.chunk.js",
-    "static/js/2.c61a87b9.chunk.js.map": "/Posts_Manager_App/posts-manager/static/js/2.c61a87b9.chunk.js.map",
-    "index.html": "/Posts_Manager_App/posts-manager/index.html",
-    "precache-manifest.dda27b93dfcf5795b215c981f26e9020.js": "/Posts_Manager_App/posts-manager/precache-manifest.dda27b93dfcf5795b215c981f26e9020.js",
-    "service-worker.js": "/Posts_Manager_App/posts-manager/service-worker.js",
-    "static/css/main.7378ac47.chunk.css.map": "/Posts_Manager_App/posts-manager/static/css/main.7378ac47.chunk.css.map"
+    "main.css": "/Posts_Manager_App/static/css/main.7378ac47.chunk.css",
+    "main.js": "/Posts_Manager_App/static/js/main.751f8cb2.chunk.js",
+    "main.js.map": "/Posts_Manager_App/static/js/main.751f8cb2.chunk.js.map",
+    "runtime~main.js": "/Posts_Manager_App/static/js/runtime~main.17b4422a.js",
+    "runtime~main.js.map": "/Posts_Manager_App/static/js/runtime~main.17b4422a.js.map",
+    "static/js/2.ce511657.chunk.js": "/Posts_Manager_App/static/js/2.ce511657.chunk.js",
+    "static/js/2.ce511657.chunk.js.map": "/Posts_Manager_App/static/js/2.ce511657.chunk.js.map",
+    "index.html": "/Posts_Manager_App/index.html",
+    "precache-manifest.d079eca1d7ade1b1802115b8dddec312.js": "/Posts_Manager_App/precache-manifest.d079eca1d7ade1b1802115b8dddec312.js",
+    "service-worker.js": "/Posts_Manager_App/service-worker.js",
+    "static/css/main.7378ac47.chunk.css.map": "/Posts_Manager_App/static/css/main.7378ac47.chunk.css.map"
   }
 }
