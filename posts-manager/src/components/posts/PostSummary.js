@@ -4,6 +4,7 @@
 // Exported to: PostsLists.js
 
 import React from 'react';
+import moment from 'moment';
 
 const PostSummary = ({post}) => {
     return(
@@ -11,7 +12,7 @@ const PostSummary = ({post}) => {
             <div className="card-content grey-text text-darken-3">
                 <span className="card-title"  key={post.id}>{post.title}</span>
                 <p>Posted by {post.authFirstName} {post.authLastName} </p>
-                <p className="grey-text">3rd August, 2am</p>
+                <p className="grey-text"> {moment(post.createdAt.toDate()).calendar()} </p>
             </div>
         </div>
     )
