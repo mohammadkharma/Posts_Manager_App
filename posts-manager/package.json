@@ -2,7 +2,7 @@
   "name": "posts-manager",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mohammadkharma.github.io/Posts_Manager_App/index.html",
+  "homepage": "https://mohammadkharma.github.io/Posts_Manager_App/",
   "dependencies": {
     "firebase": "^6.4.2",
     "gh-pages": "^2.1.1",
