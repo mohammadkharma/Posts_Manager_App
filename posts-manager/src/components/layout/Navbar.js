@@ -8,6 +8,7 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import SignedInLinks from './SignedInLinks';
 import SignedOutLinks from './SignedOutLinks';
+import '../../styles/navbar.scss';
 
 const Navbar = (props) => {
     const { auth, profile } = props;
