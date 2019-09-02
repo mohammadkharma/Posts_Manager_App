@@ -1,21 +1,27 @@
-.myNav {
+ul {
   display: flex;
-  justify-content: space-around;
-
-  #logo {
+  list-style: none;
+  li {
+    padding-left: 10px;
+    img {
+      height: 70px;
+      width: 100px;
+    }
+  }
+  #initials {
     position: relative;
     text-align: center;
-    margin-top: 20px;
+    margin-left: 30px;
     img {
       width: 150px;
       height: 120px;
     }
     #centered {
       position: absolute;
-      top: 25%;
-      left: 50%;
+      top: 37%;
+      left: 35%;
       transform: translate(-50%, -50%);
-      font-size: 22px;
+      font-size: 30px;
       a {
         font-weight: bold;
         color: white;

@@ -1,0 +1,32 @@
+#notif-window {
+  position: relative;
+  text-align: left;
+  #notifications {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 22px;
+    #notif-title {
+      text-align: center;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      li {
+        padding: 2px;
+        #notif-user {
+            color: blue;
+            font-weight: bold;
+        }
+        #notif-content {
+            font-size: 14px
+        }
+        #notif-date {
+            color: gray;
+            font-size: 12px;
+        }
+      }
+    }
+  }
+}

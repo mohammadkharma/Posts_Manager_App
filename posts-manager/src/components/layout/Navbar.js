@@ -9,18 +9,21 @@ import { Link } from 'react-router-dom';
 import SignedInLinks from './SignedInLinks';
 import SignedOutLinks from './SignedOutLinks';
 import '../../styles/navbar.scss';
+import ProjectLogo from '../../media/project-logo.jpg';
+
 
 const Navbar = (props) => {
     const { auth, profile } = props;
     // console.log(auth);
-    const links = auth.uid ? <SignedInLinks profile={profile} /> : <SignedOutLinks /> 
-    return(
-    <nav className="nav-wrapper grey darken-3">
-        <div className="container">
-            <Link to='/' className='brand-logo hide-on-med-and-down'>Posts Manager</Link>
-            { links }
-        </div>
-    </nav>       
+    const links = auth.uid ? <SignedInLinks profile={profile} /> : <SignedOutLinks />
+    return (
+        <nav className="myNav">
+            <div id="logo">
+                <img src={ProjectLogo} alt="" />
+                <div id="centered"><Link to='/'>Posts Manager</Link></div>
+            </div>
+            {links}
+        </nav>
     )
 }
 

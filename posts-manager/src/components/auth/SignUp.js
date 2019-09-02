@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 import { signUp } from '../../store/actions/authActions/signUpAction';
+import SignUpForm from '../../media/form1.png';
+
 
 class SignUp extends Component {
   state = {
@@ -25,9 +27,10 @@ class SignUp extends Component {
     if (auth.uid) return <Redirect to='/' />
 
     return (
-      <div className="container">
-        <form className="white" onSubmit={this.handleSubmit}>
-          <h5 className="grey-text text-darken-3">Sign Up</h5>
+       <div id="sign-container">
+      <img src={SignUpForm} alt=""/>
+        <form id='signin-form' onSubmit={this.handleSubmit}>
+          <h3>SIGN UP</h3>
           <div className="input-field">
             <label htmlFor="email">Email</label>
             <input type="email" id='email' onChange={this.handleChange} />
@@ -37,7 +40,7 @@ class SignUp extends Component {
             <input type="password" id='password' onChange={this.handleChange} />
           </div>
           <div className="input-field">
-            <label htmlFor="firstName">First Name</label>
+            <label htmlFor="firstName">Last Name</label>
             <input type="text" id='firstName' onChange={this.handleChange} />
           </div>
           <div className="input-field">
@@ -50,8 +53,9 @@ class SignUp extends Component {
               {authError ? <p> {authError} </p> : null}
             </div>
           </div>
-        </form> 
+        </form>
       </div>
+     
     )
   }
 }

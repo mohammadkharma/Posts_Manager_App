@@ -1,19 +1,13 @@
-// This component is responsible for:
-// A new post template to be outputted to the home page. 
-
-// Exported to: PostsLists.js
-
 import React from 'react';
 import moment from 'moment';
+import '../../styles/postSummary.scss';
 
 const PostSummary = ({post}) => {
     return(
-        <div className="card z-depth-0 post-summery">
-            <div className="card-content grey-text text-darken-3">
-                <span className="card-title"  key={post.id}>{post.title}</span>
+        <div className="post-summary">
+                <span className="card-title" key={post.id}>{post.title}</span>
                 <p>Posted by {post.authFirstName} {post.authLastName} </p>
                 <p className="grey-text"> {moment(post.createdAt.toDate()).calendar()} </p>
-            </div>
         </div>
     )
 }

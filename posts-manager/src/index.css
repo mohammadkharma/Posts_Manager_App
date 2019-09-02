@@ -1,6 +1,6 @@
-html {
+/* html {
   min-height: 100%;
-}
+} */
 
 body {
   margin: 0;
@@ -10,12 +10,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background: url(/img/paper-bg.png) no-repeat;
-  background-size: 100%;
-  background-position: bottom;
-  background-color: gray;
-  min-height: 100%; */
-  background-color: gray;
+  /* background: url('../src/media/tree2.png') no-repeat;
+  background-size: 80% 120%;
+  background-position: bottom; */
 }
 
 code {
@@ -23,7 +20,7 @@ code {
     monospace;
 }
 
-form {
+/* form {
   padding: 20px;
   margin-top: 60px;
 }
@@ -50,8 +47,7 @@ input[type=password]:not(.browser-default):focus:not([readonly]) + label{
 .welcomeText {
   position: absolute;
   bottom: 50vh;
-  /* left: 40vw; */
   z-index: -1;
   font-size: 3vw;
   color: rgb(49, 49, 49);
-}
+} */

@@ -8,26 +8,24 @@ import Notifications from './Notifications';
 import PostsList from '../posts/PostsList';
 import { compose } from 'redux';
 import { connect } from 'react-redux';
-import { firestoreConnect } from 'react-redux-firebase'; 
+import { firestoreConnect } from 'react-redux-firebase';
 import { Redirect } from 'react-router-dom';
+import '../../styles/dashboard.scss';
 
 
 class Dashboard extends Component {
     render() {
         // console.log(this.props)
         const { posts, auth, notifications } = this.props;
-        if(!auth.uid) return <Redirect to='/signin' />
+        if (!auth.uid) return <Redirect to='/signin' />
         return (
-            <div className='dashboard container'>
-                <div className="row">
-                    <div className="col s12 m6">
-                        <PostsList posts={posts} />
-                    </div>
-                    <div className="col s12 m5 offset-m1">
-                        <Notifications notifications={notifications} />
-                    </div>
+            <div id='dashboard'>
+                <div>
+                    <PostsList posts={posts} />
                 </div>
-
+                <div>
+                    <Notifications notifications={notifications} />
+                </div>
             </div>
         )
     }
@@ -45,7 +43,7 @@ const mapState = state => {
 export default compose(
     connect(mapState),
     firestoreConnect([
-        {collection: 'posts', orderBy: ['createdAt', 'desc']},
-        {collection: 'notifications', limit: 3, orderBy: ['time', 'desc']}
+        { collection: 'posts', orderBy: ['createdAt', 'desc'] },
+        { collection: 'notifications', limit: 3, orderBy: ['time', 'desc'] }
     ])
 )(Dashboard);
