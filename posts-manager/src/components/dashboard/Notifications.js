@@ -1,16 +1,13 @@
 import React from 'react';
 import moment from 'moment';
-import myWindow from '../../media/window.jpg';
 import '../../styles/notifications.scss';
 
 const Notifications = (props) => {
   const { notifications } = props;
     return(
-        <div id="notif-window">
-          <img src={myWindow} alt=""/>
           <div id='notifications'>
-          <h3 id="notif-title">Notifications</h3>
-          <ul id="notif-list">
+          <h1>Notifications</h1>
+          <ul>
             { notifications && notifications.map(item => {
               return (
                 <li key={item.id}>
@@ -24,7 +21,6 @@ const Notifications = (props) => {
             }) }
           </ul>
     </div>
-        </div>
     )
 }
 

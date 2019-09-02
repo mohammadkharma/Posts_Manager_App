@@ -1,8 +1,3 @@
-// This component is responsible for:
-// The home page (PostsLists & Notifications).
-
-// Exported to: App.js (Route)
-
 import React, { Component } from 'react';
 import Notifications from './Notifications';
 import PostsList from '../posts/PostsList';
@@ -11,6 +6,7 @@ import { connect } from 'react-redux';
 import { firestoreConnect } from 'react-redux-firebase';
 import { Redirect } from 'react-router-dom';
 import '../../styles/dashboard.scss';
+import Plant from '../../media/leafs.jpg';
 
 
 class Dashboard extends Component {
@@ -23,6 +19,7 @@ class Dashboard extends Component {
                 <div>
                     <PostsList posts={posts} />
                 </div>
+                <img src={Plant} alt=""/>
                 <div>
                     <Notifications notifications={notifications} />
                 </div>

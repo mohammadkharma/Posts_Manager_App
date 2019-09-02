@@ -1,4 +1,12 @@
 #dashboard {
-    display: flex;
-    justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
+  background: url("../media/jungle.png") no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  img {
+    width: 200px;
+    height: 200px;
+    margin-top: 20vh;
   }
+}

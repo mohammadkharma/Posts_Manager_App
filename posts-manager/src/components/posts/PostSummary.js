@@ -5,9 +5,9 @@ import '../../styles/postSummary.scss';
 const PostSummary = ({post}) => {
     return(
         <div className="post-summary">
-                <span className="card-title" key={post.id}>{post.title}</span>
-                <p>Posted by {post.authFirstName} {post.authLastName} </p>
-                <p className="grey-text"> {moment(post.createdAt.toDate()).calendar()} </p>
+                <h1 className="post-title" key={post.id}>{post.title}</h1>
+                <p className='posted-by'>Posted by {post.authFirstName} {post.authLastName} </p>
+                <p className="post-date"> {moment(post.createdAt.toDate()).calendar()} </p>
         </div>
     )
 }

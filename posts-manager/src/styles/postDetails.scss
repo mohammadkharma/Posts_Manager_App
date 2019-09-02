@@ -1,0 +1,18 @@
+.post-details {
+  text-align: center;
+  margin: 50px;
+  .content {
+    h1,
+    h3 {
+      color: rgb(241, 110, 62);
+      font-weight: bolder;
+    }
+  }
+  .post-auth {
+    div,
+    p {
+      color: rgba(158, 90, 65, 0.74);
+      font-size: 14px;
+    }
+  }
+}

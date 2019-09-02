@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { createPost } from '../../store/actions/postActions';
 import { Redirect } from 'react-router-dom';
+import SigninForm from '../../media/form1.png';
+import '../../styles/createPost.scss';
 
 class CreatePost extends Component {
   state = {
@@ -24,19 +26,20 @@ class CreatePost extends Component {
     if(!auth.uid) return <Redirect to='/signin' />
     
     return (
-      <div className="container">
-        <form className="white" onSubmit={this.handleSubmit}>
-          <h5 className="grey-text text-darken-3">Create new post</h5>
+      <div id="create-post">
+      <img src={SigninForm} alt=""/>
+        <form onSubmit={this.handleSubmit}>
+          <h3>Create new post</h3>
           <div className="input-field">
             <label htmlFor="title">Title</label>
             <input type="text" id='title' onChange={this.handleChange} />
           </div>
           <div className="input-field">
             <label htmlFor="content">Post content</label>
-           <textarea id="content" className='materialize-textarea' onChange={this.handleChange}></textarea>
+           <textarea id="content" onChange={this.handleChange}></textarea>
           </div>
           <div className="input-field">
-            <button className="btn pink lighten-1 z-depth-0">Create</button>
+            <button>Create</button>
           </div>
         </form>
       </div>
