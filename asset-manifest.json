@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Posts_Manager_App/static/css/main.0669636a.chunk.css",
+    "main.css": "/Posts_Manager_App/static/css/main.e475332a.chunk.css",
     "main.js": "/Posts_Manager_App/static/js/main.54389f40.chunk.js",
     "main.js.map": "/Posts_Manager_App/static/js/main.54389f40.chunk.js.map",
     "runtime~main.js": "/Posts_Manager_App/static/js/runtime~main.17b4422a.js",
@@ -8,9 +8,9 @@
     "static/js/2.63894e97.chunk.js": "/Posts_Manager_App/static/js/2.63894e97.chunk.js",
     "static/js/2.63894e97.chunk.js.map": "/Posts_Manager_App/static/js/2.63894e97.chunk.js.map",
     "index.html": "/Posts_Manager_App/index.html",
-    "precache-manifest.2e25a38c6bbc05cda01320f4ece10838.js": "/Posts_Manager_App/precache-manifest.2e25a38c6bbc05cda01320f4ece10838.js",
+    "precache-manifest.afaea20bd68badff480227052987a143.js": "/Posts_Manager_App/precache-manifest.afaea20bd68badff480227052987a143.js",
     "service-worker.js": "/Posts_Manager_App/service-worker.js",
-    "static/css/main.0669636a.chunk.css.map": "/Posts_Manager_App/static/css/main.0669636a.chunk.css.map",
+    "static/css/main.e475332a.chunk.css.map": "/Posts_Manager_App/static/css/main.e475332a.chunk.css.map",
     "static/media/form1.png": "/Posts_Manager_App/static/media/form1.3a1b02c1.png",
     "static/media/initials-sign.jpg": "/Posts_Manager_App/static/media/initials-sign.b213dd04.jpg",
     "static/media/createPost.scss": "/Posts_Manager_App/static/media/jungle.2f2f8249.png",
